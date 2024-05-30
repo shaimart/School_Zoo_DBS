@@ -22,7 +22,7 @@ public class Main {
         emf = Persistence.createEntityManagerFactory("ApplicationPU");
         em = emf.createEntityManager();
 
-        // Создание DAO объектов
+        // Сreating  DAO 
         amountDao = new AmountDao(em);
         animalDao = new AnimalDao(em);
         birdsDao = new BirdsDao(em);
@@ -47,7 +47,7 @@ public class Main {
             }
         }
 
-        // Закрытие EntityManagerFactory
+        // Closing EntityManagerFactory
         if (emf != null && emf.isOpen()) {
             emf.close();
         }
