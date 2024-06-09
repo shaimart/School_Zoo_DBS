@@ -72,7 +72,7 @@ private static void createEntities() {
     transaction.begin();
 
     try {
-        // Ctreating an Saving  AnimalEntity
+        // Creating an Saving  AnimalEntity
         BirdsEntity animal = new BirdsEntity();
         animal.setSpecies("Birds");
         animal.setDateofbirth(Date.valueOf("2023-11-11"));
@@ -135,7 +135,7 @@ private static void createEntities() {
         }
 
         // Printing Employees by Zoo
-        String zooName = "Tokyo Zoo"; //  нужное название зоопарка
+        String zooName = "Tokyo Zoo"; //  name of Zoo
         List<EmployeeEntity> employeesByZoo = employeeDao.getEmployeesByZoo(zooName);
         System.out.println("Employees at " + zooName + ":");
         for (EmployeeEntity employee : employeesByZoo) {
